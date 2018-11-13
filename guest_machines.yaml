@@ -1,0 +1,17 @@
+---
+- name: jenkins
+  box: centos/7
+  cpus: 1
+  memory: 2048 
+  private_ip: 10.0.10.10
+  scripts:
+  - init_ssh.bash
+- name: deploy
+  box: centos/7
+  cpus: 1
+  memory: 2048 
+  private_ip: 10.0.10.11
+  scripts:
+  - init_ssh.bash
+...
+
